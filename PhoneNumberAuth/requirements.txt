@@ -1,0 +1,9 @@
+ build gradle project :
+     allprojects {
+    repositories {
+        google()
+        jcenter()
+    this one manually ->  maven { url 'https://jitpack.io' }
+    }}
+    And module app:
+    implementation 'com.github.inpossoft:CountryCodePickerProject:2.0.0'
