@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="268dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="36dp"
+        android:text="Hello Dude \n😁"
+        android:textAlignment="center"
+        android:textSize="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="200dp">
+
+        # country code picker
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="100dp"
+            app:hideNameCode="true"
+            android:layout_height="wrap_content"
+            app:defaultNameCode="BGD"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="208dp" />
+
+        <EditText
+            android:id="@+id/edittext_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="190dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:id="@+id/buttonVerifybtn"
+        android:text="verify Number"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
